@@ -1,5 +1,10 @@
 # 100 Days Of Code - Log
 
+### Day 1: December 15th, 2017
+
+**Today's Progress**: Sass Processing & Minification Via Gulp.js
+
+
 ### Day 0: December 14th, 2017
 
 **Today's Progress**: Forked the #100DaysOfCode repo
