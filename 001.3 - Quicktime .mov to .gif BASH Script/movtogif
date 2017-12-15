@@ -1,0 +1,8 @@
+#!/bin/sh
+echo ".mov file location >"
+read INPUT
+
+echo ".gif destination >"
+read OUTPUT
+
+ffmpeg -i $INPUT -pix_fmt rgb8 -r 25 -f gif - | gifsicle --optimize=10 --delay=1 > $OUTPUT
