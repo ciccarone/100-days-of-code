@@ -1,0 +1,98 @@
+$height-list-item: 80px;
+$color-main: #f2f2f2;
+$font-main: "Arial";
+$font-bullet-entity: "\2964";
+$screen-sm: 500px;
+$transition-base: .2s;
+
+.list-block {
+
+  &__list {
+
+    padding: 0;
+
+  }
+
+  &__item {
+
+    color: darken($color-main, 40);
+    border-radius: ($height-list-item / 20);
+    list-style: none;
+    border: ($height-list-item / 40) solid darken($color-main, 1);
+    background: $color-main;
+    font-family: $font-main, sans-serif;
+    transition: all $transition-base ease-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    line-height: $height-list-item;
+    padding-left: ($height-list-item / 10);
+
+    a {
+      width: 100%;
+      color: darken($color-main, 40);
+      text-decoration: none;
+    }
+
+    @media (max-width: $screen-sm) {
+
+      padding: ($height-list-item / 4);
+      text-align: center;
+
+    }
+
+    &:before {
+
+      content: $font-bullet-entity;
+      color: lighten($color-main, 10);
+      text-shadow: 1px 1px 1px darken($color-main, 20);
+      font-size: ($height-list-item / 5);
+      margin-right: ($height-list-item / 10);
+
+      @media (max-width: $screen-sm) {
+
+        display: none;
+
+      }
+
+    }
+
+    &:hover {
+
+      border-color: transparent;
+      animation: hover 1s forwards;
+      animation-direction: alternate;
+      position: relative;
+
+      &:before {
+
+        text-shadow: none;
+        transition: $transition-base;
+        margin-left: -4px;
+        margin-right: 12px;
+      }
+
+    }
+
+    &:not(:last-child) {
+
+      margin-bottom: ($height-list-item / 5);
+
+    }
+  }
+}
+
+@keyframes hover {
+  5% {
+    background: darken($color-main, 16);
+    text-shadow: 10px 10px 11px darken($color-main, 20);
+  }
+  50% {
+    text-shadow: 1px 1px 1px darken($color-main, 20);
+  }
+  100% {
+    background: darken($color-main, 10);
+    color: darken($color-main, 50);
+
+  }
+}
