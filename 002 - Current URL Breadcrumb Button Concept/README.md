@@ -8,3 +8,5 @@
 #
 
 Splits the current URL into clickable breadcrumbs and displays in a parallelogram fashion
+
+[demo](http://tonyciccarone.com/public/url-path-breadcrumb/)
