@@ -1,5 +1,9 @@
 # 100 Days Of Code - Log
 
+### Day 2: December 19th, 2017
+
+**Thing**: Current URL Breadcrumb Button Concept
+
 ### Day 1.3: December 15th, 2017
 
 **Thing**: Quicktime .mov to .gif BASH Script
