@@ -1,5 +1,9 @@
 # 100 Days Of Code - Log
 
+### Day 3: September 25th, 2018
+
+**Thing**: Generate Sass color variables using base root HEX color 
+
 ### Day 2: December 19th, 2017
 
 **Thing**: Current URL Breadcrumb Button Concept
